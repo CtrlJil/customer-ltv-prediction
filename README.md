@@ -18,21 +18,21 @@
 
 - [Methodology](#methodology)
 
-&nbsp; - \[RFM Analysis](#rfm-analysis)
+- [RFM Analysis](#rfm-analysis)
 
-&nbsp; - \[LTV Prediction Model](#ltv-prediction-model)
+- [LTV Prediction Model](#ltv-prediction-model)
 
-- \[Key Findings \& Insights](#key-findings--insights)
+- [Key Findings \& Insights](#key-findings--insights)
 
-- \[Project Structure](#project-structure)
+- [Project Structure](#project-structure)
 
-- \[Getting Started](#getting-started)
+- [Getting Started](#getting-started)
 
-&nbsp; - [Prerequisites](#prerequisites)
+- [Prerequisites](#prerequisites)
 
-&nbsp; - [Installation](#installation)
+- [Installation](#installation)
 
-&nbsp; - [How to Run the Notebook](#how-to-run-the-notebook)
+- [How to Run the Notebook](#how-to-run-the-notebook)
 
 - [Future Work](#future-work)
 
@@ -72,31 +72,31 @@ The analysis for this project was conducted using a transactional dataset.
 
 
 
-* \*\*Dataset:\*\* `(Online Retail Dataset from UCI Machine Learning Repository)`
+* Dataset: `(Online Retail Dataset from UCI Machine Learning Repository)`
 
-* \*\*Source:\*\* `(https://archive.ics.uci.edu/ml/datasets/Online+Retail)`
+* Source: `(https://archive.ics.uci.edu/ml/datasets/Online+Retail)`
 
-* \*\*Data Description:\*\* This dataset contains transactional data for a UK-based online retail store. Key features include:
+* Data Description: This dataset contains transactional data for a UK-based online retail store. Key features include:
 
-&nbsp;   * `InvoiceNo`: Invoice number.
+ * `InvoiceNo`: Invoice number.
 
-&nbsp;   * `StockCode`: Product (item) code.
+ * `StockCode`: Product (item) code.
 
-&nbsp;   \* `Description`: Product description.
+ * `Description`: Product description.
 
-&nbsp;   \* `Quantity`: The quantity of each item per invoice.
+ * `Quantity`: The quantity of each item per invoice.
 
-&nbsp;   \* `InvoiceDate`: Invoice date and time.
+ * `InvoiceDate`: Invoice date and time.
 
-&nbsp;   \* `UnitPrice`: Unit price.
+ * `UnitPrice`: Unit price.
 
-&nbsp;   \* `CustomerID`: Customer number (a unique identifier for each customer).
+ * `CustomerID`: Customer number (a unique identifier for each customer).
 
-&nbsp;   \* `Country`: Country of residence for the customer.
+ * `Country`: Country of residence for the customer.
 
 
 
-\## Methodology
+## Methodology
 
 
 
@@ -104,17 +104,17 @@ The project follows a structured approach combining data preprocessing, RFM segm
 
 
 
-\### RFM Analysis
+### RFM Analysis
 
 
 
-\*\*Recency, Frequency, and Monetary (RFM)\*\* analysis is a marketing technique used to quantitatively rank and group customers based on their buying habits.
+* Recency, Frequency, and Monetary (RFM) analysis is a marketing technique used to quantitatively rank and group customers based on their buying habits.
 
-\* \*\*Recency (R):\*\* How recently did the customer make a purchase? (Calculated as days since last purchase).
+* Recency (R): How recently did the customer make a purchase? (Calculated as days since last purchase).
 
-\* \*\*Frequency (F):\*\* How often do they purchase? (Calculated as total number of purchases).
+* Frequency (F): How often do they purchase? (Calculated as total number of purchases).
 
-\* \*\*Monetary (M):\*\* How much money do they spend? (Calculated as total money spent).
+* Monetary (M): How much money do they spend? (Calculated as total money spent).
 
 
 
@@ -122,75 +122,52 @@ Customers are segmented into various groups (e.g., "Champions," "Loyal Customers
 
 
 
-\### LTV Prediction Model
+### LTV Prediction Model
 
 
 
 Following RFM segmentation, various models can be applied for CLTV prediction. In this project, we explored and implemented:
 
-\* \*\*(Probability Models like BG/NBD and Gamma-Gamma, or Regression Models).\*\*
+* (Probability Models like BG/NBD and Gamma-Gamma, or Regression Models).
 
-&nbsp;   \* \*\*Probabilistic Approach (BG/NBD Model):\*\* Used to predict the number of future transactions a customer will make within a given time frame.
+* Probabilistic Approach (BG/NBD Model): Used to predict the number of future transactions a customer will make within a given time frame.
 
-&nbsp;   \* \*\*Monetary Value Prediction (K-means):\*\* Used to predict the average monetary value of a customer's transactions, conditional on them making a purchase.
+* Monetary Value Prediction (K-means): Used to predict the average monetary value of a customer's transactions, conditional on them making a purchase.
 
-&nbsp;   \* \*\*Integration:\*\* The outputs from these models are then combined to calculate the predicted CLTV.
+* Integration: The outputs from these models are then combined to calculate the predicted CLTV.
 
-\* \*\*Key Steps:\*\*
+* Key Steps:
 
-&nbsp;   \* Data cleaning and feature engineering to derive RFM metrics.
+* Data cleaning and feature engineering to derive RFM metrics.
 
-&nbsp;   \* Application of the chosen LTV model(s).
+* Application of the chosen LTV model(s).
 
-&nbsp;   \* Model training, validation, and evaluation.
+* Model training, validation, and evaluation.
 
-&nbsp;   \* Prediction of CLTV for each customer.
-
-
-
-\## Key Findings \& Insights
-
-
-\* \*\*Customer Segmentation:\*\* We successfully identified 3 distinct customer segments based on RFM scores, allowing for differentiated marketing approaches. For example:
-
-&nbsp;   \* \*\*Champions (High R, High F, High M):\*\* Our most valuable customers, highly engaged and profitable. Strategies focus on retention and loyalty programs.
-
-&nbsp;   \* \*\*New Customers (High R, Low F, Low M):\*\* Recent acquisitions with potential. Focus on onboarding and initial engagement.
-
-&nbsp;   \* \*\*At Risk (Low R, High F, High M but dropping):\*\* Valuable customers showing signs of reduced activity. Re-engagement campaigns are crucial.
-
-\* \*\*LTV Distribution:\*\* The predicted CLTV exhibits a skewed distribution, highlighting a small segment of customers contributing disproportionately to future revenue.
-
-\* \*\*Predictive Power:\*\* The model demonstrates `(strong)` predictive power, with `(an average error of 0.010%)'.
-
-\* \*\*Actionable Recommendations:\*\*
-
-&nbsp;   \* Tailor marketing messages to different RFM segments (e.g., exclusive offers for Champions, win-back campaigns for At Risk customers).
-
-&nbsp;   \* Optimize customer acquisition by focusing on channels that yield customers with higher predicted LTV.
-
-&nbsp;   \* Invest in retention strategies for high-LTV customers, as acquiring new customers is often more expensive.
-
-
-\## Project Structure
+* Prediction of CLTV for each customer.
 
 
 
-customer-ltv-prediction/
+## Key Findings \& Insights
 
-├── your\_notebook\_name.ipynb   # Main Jupyter Notebook with analysis and model
 
-├── data/                       # Directory for raw and processed data
+* Customer Segmentation: We successfully identified 3 distinct customer segments based on RFM scores, allowing for differentiated marketing approaches. For example:
 
-│   └── (customer\_LTV\_prediction.csv)
+* Champions (High R, High F, High M): Our most valuable customers, highly engaged and profitable. Strategies focus on retention and loyalty programs.
 
-├── visuals/                    # Directory for any generated plots or banner images
+* New Customers (High R, Low F, Low M):\*\* Recent acquisitions with potential. Focus on onboarding and initial engagement.
 
-│   └── (project\_banner.png)
+* At Risk (Low R, High F, High M but dropping):\*\* Valuable customers showing signs of reduced activity. Re-engagement campaigns are crucial.
 
-├── .gitignore                  # Specifies intentionally untracked files to ignore
+* LTV Distribution: The predicted CLTV exhibits a skewed distribution, highlighting a small segment of customers contributing disproportionately to future revenue.
 
-├── README.md                   # This file
+* Predictive Power:\*\* The model demonstrates `(strong)` predictive power, with `(an average error of 0.010%)'.
 
-└── requirements.txt            # List of Python dependencies
+* Actionable Recommendations:
+
+ * Tailor marketing messages to different RFM segments (e.g., exclusive offers for Champions, win-back campaigns for At Risk customers).
+
+* Optimize customer acquisition by focusing on channels that yield customers with higher predicted LTV.
+
+* Invest in retention strategies for high-LTV customers, as acquiring new customers is often more expensive.
 
