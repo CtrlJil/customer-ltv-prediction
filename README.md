@@ -2,19 +2,19 @@
 
 
 
-!\[Growth_graph](https://i.postimg.cc/Hx3pdd1Q/bar-graph-business-growth-pastel-color-3d-render-free.png)
+![Growth_graph](https://i.postimg.cc/Hx3pdd1Q/bar-graph-business-growth-pastel-color-3d-render-free.png)
 
 
 
 
 
-\## Table of Contents
+## Table of Contents
 
-\- \[Project Overview](#project-overview)
+- [Project Overview](#project-overview)
 
-\- \[Problem Statement](#problem-statement)
+- [Problem Statement](#problem-statement)
 
-\- \[Data Sources](#data-sources)
+- [Data Sources](#data-sources)
 
 \- \[Methodology](#methodology)
 
