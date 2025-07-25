@@ -2,7 +2,7 @@
 
 
 
-!\[Project Banner/Visual Here](https://i.postimg.cc/Hx3pdd1Q/bar-graph-business-growth-pastel-color-3d-render-free.webp)
+!\[Growth_graph](https://i.postimg.cc/Hx3pdd1Q/bar-graph-business-growth-pastel-color-3d-render-free.webp)
 
 
 
