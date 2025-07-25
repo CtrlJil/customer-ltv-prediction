@@ -16,29 +16,27 @@
 
 - [Data Sources](#data-sources)
 
-\- \[Methodology](#methodology)
+- [Methodology](#methodology)
 
 &nbsp; - \[RFM Analysis](#rfm-analysis)
 
 &nbsp; - \[LTV Prediction Model](#ltv-prediction-model)
 
-\- \[Key Findings \& Insights](#key-findings--insights)
+- \[Key Findings \& Insights](#key-findings--insights)
 
-\- \[Project Structure](#project-structure)
+- \[Project Structure](#project-structure)
 
-\- \[Getting Started](#getting-started)
+- \[Getting Started](#getting-started)
 
-&nbsp; - \[Prerequisites](#prerequisites)
+&nbsp; - [Prerequisites](#prerequisites)
 
-&nbsp; - \[Installation](#installation)
+&nbsp; - [Installation](#installation)
 
-&nbsp; - \[How to Run the Notebook](#how-to-run-the-notebook)
+&nbsp; - [How to Run the Notebook](#how-to-run-the-notebook)
 
-\- \[Future Work](#future-work)
+- [Future Work](#future-work)
 
-\- \[Contact](#contact)
-
-\- \[License](#license)
+- [Contact](#contact)
 
 
 
@@ -46,7 +44,7 @@
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -54,35 +52,35 @@ This project focuses on predicting \*\*Customer Lifetime Value (CLTV)\*\*, a cri
 
 
 
-\## Problem Statement
+## Problem Statement
 
 
 
 In many businesses, a significant portion of revenue comes from a relatively small segment of highly valuable customers. However, identifying these high-value customers early and understanding their potential future contribution can be challenging. Without a robust CLTV prediction model, marketing efforts can be untargeted, leading to inefficient spend on customers with low potential lifetime value, and missed opportunities to nurture high-potential customers. This project addresses the need for a systematic approach to:
 
-1\.  Segment customers based on their historical behavior.
+1.  Segment customers based on their historical behavior.
 
-2\.  Quantify the predicted future value of each customer.
+2.  Quantify the predicted future value of each customer.
 
-3\.  Provide actionable insights to improve customer relationship management and overall business profitability.
+3.  Provide actionable insights to improve customer relationship management and overall business profitability.
 
 
 
-\## Data Sources
+## Data Sources
 
 The analysis for this project was conducted using a transactional dataset.
 
 
 
-\* \*\*Dataset:\*\* `(Online Retail Dataset from UCI Machine Learning Repository)`
+* \*\*Dataset:\*\* `(Online Retail Dataset from UCI Machine Learning Repository)`
 
-\* \*\*Source:\*\* `(https://archive.ics.uci.edu/ml/datasets/Online+Retail)`
+* \*\*Source:\*\* `(https://archive.ics.uci.edu/ml/datasets/Online+Retail)`
 
-\* \*\*Data Description:\*\* This dataset contains transactional data for a UK-based online retail store. Key features include:
+* \*\*Data Description:\*\* This dataset contains transactional data for a UK-based online retail store. Key features include:
 
-&nbsp;   \* `InvoiceNo`: Invoice number.
+&nbsp;   * `InvoiceNo`: Invoice number.
 
-&nbsp;   \* `StockCode`: Product (item) code.
+&nbsp;   * `StockCode`: Product (item) code.
 
 &nbsp;   \* `Description`: Product description.
 
